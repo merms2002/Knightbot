@@ -1,6 +1,6 @@
 const truths = [
-    "What's your biggest fear?",
-    "What was your most embarrassing moment?",
+    "ايه هي اكتر حاجه بتخاف منها?",
+    "ايه هي اكتر حاجه كانت محرجه بالنسبالك?",
     "If you could be invisible for a day, what would you do?",
     "Who was your first crush?",
     "What’s one thing you’ve never told anyone?"
