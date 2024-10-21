@@ -25,7 +25,7 @@ async function warnCommand(sock, chatId, senderId, mentionedJidList) {
     }
 
     if (!isSenderAdmin) {
-        await sock.sendMessage(chatId, { text: 'Only group admins can use the warn command.' });
+        await sock.sendMessage(chatId, { text: 'الادمن بس يقدر يستخدم الامر ده.' });
         return;
     }
 
