@@ -23,7 +23,7 @@ const convertStickerToImage = async (sock, quotedMessage, chatId) => {
     try {
         const stickerMessage = quotedMessage.stickerMessage;
         if (!stickerMessage) {
-            await sock.sendMessage(chatId, { text: 'Reply to a sticker with .simage to convert it.' });
+            await sock.sendMessage(chatId, { text: 'اعمل منشن للستيكرة اللي عايز تعملها صوره.' });
             return;
         }
 
