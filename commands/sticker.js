@@ -22,7 +22,7 @@ async function stickerCommand(sock, chatId, message) {
         const mediaBuffer = await downloadMediaMessage(message, 'buffer', {}, { logger: undefined, reuploadRequest: sock.updateMediaMessage });
 
         if (!mediaBuffer) {
-            await sock.sendMessage(chatId, { text: 'Failed to download the media. Please try again.' });
+            await sock.sendMessage(chatId, { text: 'حصلت حاجه غلط ابقا جري بعدين .' });
             return;
         }
 
