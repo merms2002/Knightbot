@@ -40,7 +40,7 @@ async function stickerCommand(sock, chatId, message) {
         });
     } catch (error) {
         console.error('Error creating sticker:', error);
-        await sock.sendMessage(chatId, { text: 'An error occurred while creating the sticker. Please try again.' });
+        await sock.sendMessage(chatId, { text: 'حصلت حاجه غلط وانا بعمل الاستيكر جرب تاني.' });
     }
 }
 
