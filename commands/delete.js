@@ -4,7 +4,7 @@ async function deleteCommand(sock, chatId, message, senderId) {
     const { isSenderAdmin, isBotAdmin } = await isAdmin(sock, chatId, senderId);
 
     if (!isBotAdmin) {
-        await sock.sendMessage(chatId, { text: 'I need to be an admin to delete messages.' });
+        await sock.sendMessage(chatId, { text: 'خلي البوت ادمن الاول يحب.' });
         return;
     }
 
