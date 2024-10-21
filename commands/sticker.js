@@ -14,7 +14,7 @@ async function stickerCommand(sock, chatId, message) {
     }
 
     if (!mediaMessage) {
-        await sock.sendMessage(chatId, { text: 'Please reply to an image or video to create a sticker, or send an image or video with the command.' });
+        await sock.sendMessage(chatId, { text: 'عشان تعمل استيكر اعمل منشن للفيديو او للصوره اللي عايز تعملها استيكر مع الامر.' });
         return;
     }
 
