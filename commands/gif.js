@@ -24,7 +24,7 @@ async function gifCommand(sock, chatId, query) {
         if (gifUrl) {
             await sock.sendMessage(chatId, { video: { url: gifUrl }, caption: `Here is your GIF for "${query}"` });
         } else {
-            await sock.sendMessage(chatId, { text: 'No GIFs found for your search term.' });
+            await sock.sendMessage(chatId, { text: 'مفيش gifكده يا صحبي.' });
         }
     } catch (error) {
         console.error('Error fetching GIF:', error);
