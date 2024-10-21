@@ -17,7 +17,7 @@ async function kickCommand(sock, chatId, senderId, mentionedJidList, replyMessag
     if (replyMessage && replyMessage.participant) {
         const userToKick = replyMessage.participant;
         await sock.groupParticipantsUpdate(chatId, [userToKick], 'remove');
-        await sock.sendMessage(chatId, { text: 'User has been kicked from the group.' });
+        await sock.sendMessage(chatId, { text: 'تم طرد العضو من الجروب 👍🏻.' });
         return;
     }
 
@@ -25,9 +25,9 @@ async function kickCommand(sock, chatId, senderId, mentionedJidList, replyMessag
     if (mentionedJidList.length > 0) {
         console.log(`Mentioned users to kick: ${mentionedJidList}`);  // Debugging log
         await sock.groupParticipantsUpdate(chatId, mentionedJidList, 'remove');
-        await sock.sendMessage(chatId, { text: 'User(s) have been kicked from the group.' });
+        await sock.sendMessage(chatId, { text: 'User(s) تم طرده من الجروب.' });
     } else {
-        await sock.sendMessage(chatId, { text: 'Please reply to a user or tag a user to kick.' });
+        await sock.sendMessage(chatId, { text: 'اعمل منشن للعضو اللي عايز تطرده.' });
     }
 }
 
