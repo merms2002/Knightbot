@@ -51,7 +51,7 @@ async function warnCommand(sock, chatId, senderId, mentionedJidList) {
             await sock.groupParticipantsUpdate(chatId, [userToWarn], 'remove');
             delete warnings[userToWarn];  // Reset the warning count after kicking
             saveWarnings(warnings);  // Save the updated warnings
-            await sock.sendMessage(chatId, { text: `User has been kicked from the group after 3 warnings.` });
+            await sock.sendMessage(chatId, { text: `تم طرد العضو عشان وصل ل 3انذارات.` });
         } catch (error) {
             console.error('Error kicking user from the group:', error);
             await sock.sendMessage(chatId, { text: 'Failed to kick the user. Make sure the bot has admin privileges.' });
