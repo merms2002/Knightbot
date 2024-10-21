@@ -22,7 +22,7 @@ async function gifCommand(sock, chatId, query) {
         const gifUrl = response.data.data[0]?.images?.downsized_medium?.url;
 
         if (gifUrl) {
-            await sock.sendMessage(chatId, { video: { url: gifUrl }, caption: `Here is your GIF for "${query}"` });
+            await sock.sendMessage(chatId, { video: { url: gifUrl }, caption: `اي خدمه يا صحبي😉 "${query}"` });
         } else {
             await sock.sendMessage(chatId, { text: 'مفيش gifكده يا صحبي.' });
         }
