@@ -9,7 +9,7 @@ async function deleteCommand(sock, chatId, message, senderId) {
     }
 
     if (!isSenderAdmin) {
-        await sock.sendMessage(chatId, { text: 'Only admins can use the .delete command.' });
+        await sock.sendMessage(chatId, { text: 'الامر ده للادمن بس يحب وبطل لعب بقا😘.' });
         return;
     }
 
