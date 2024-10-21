@@ -9,7 +9,7 @@ async function kickCommand(sock, chatId, senderId, mentionedJidList, replyMessag
     }
 
     if (!isSenderAdmin) {
-        await sock.sendMessage(chatId, { text: 'Only group admins can use the kick command.' });
+        await sock.sendMessage(chatId, { text: 'الادمن بس يقدر يستخدم الامر ده وبطل لعب.' });
         return;
     }
 
