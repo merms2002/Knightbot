@@ -20,7 +20,7 @@ async function warnCommand(sock, chatId, senderId, mentionedJidList) {
     const { isSenderAdmin, isBotAdmin } = await isAdmin(sock, chatId, senderId);
 
     if (!isBotAdmin) {
-        await sock.sendMessage(chatId, { text: 'Please make the bot an admin first.' });
+        await sock.sendMessage(chatId, { text: 'خلي البوت ادمن يا صحبي.' });
         return;
     }
 
