@@ -2,7 +2,7 @@ const axios = require('axios');
 
 async function lyricsCommand(sock, chatId, songTitle) {
     if (!songTitle) {
-        await sock.sendMessage(chatId, { text: 'Please provide a song title!' });
+        await sock.sendMessage(chatId, { text: 'اديني اسم للاغنيه وهجيبهالك!' });
         return;
     }
 
