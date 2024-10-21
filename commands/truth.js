@@ -1,9 +1,9 @@
 const truths = [
     "ايه هي اكتر حاجه بتخاف منها?",
     "ايه هي اكتر حاجه كانت محرجه بالنسبالك?",
-    "If you could be invisible for a day, what would you do?",
-    "Who was your first crush?",
-    "What’s one thing you’ve never told anyone?"
+    "لو كنت تقدر تكون مخفي لمدة يوم ايه هي اول حاجه هتعملها?",
+    "مين هي اول واحده حبيتها?",
+    "ايه هو السر اللي عمرك ما قلته لحد?"
 ];
 
 async function truthCommand(sock, chatId) {
