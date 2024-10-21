@@ -1,6 +1,6 @@
 async function banCommand(sock, chatId, mentionedJidList) {
     if (mentionedJidList.length === 0) {
-        await sock.sendMessage(chatId, { text: 'Please mention a user to ban.' });
+        await sock.sendMessage(chatId, { text: 'منشن واحد يا صحبي عشان تطرده.' });
         return;
     }
     
